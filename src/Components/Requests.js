@@ -5,6 +5,11 @@ const requests = {
     "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
   requestTopRated:
     "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1",
+  requestUpComing:
+    "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1",
+  requestPopularTVSeries:
+    "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1",
+  //   requestTVList: "https://api.themoviedb.org/3/genre/tv/list?language=en",
 };
 
 export default requests;

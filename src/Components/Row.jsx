@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import auth from "./Pages/Auth";
+import auth from "./Pages/Authen";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 // import { FaHeart, FaRegHeart } from "react-icons/fa";
 

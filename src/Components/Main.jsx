@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import requests from "./Requests";
-import auth from "./Pages/Auth";
+import auth from "./Pages/Authen";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);

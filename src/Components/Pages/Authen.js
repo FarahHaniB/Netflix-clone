@@ -1,4 +1,4 @@
-const auth = {
+const authen = {
     method: 'GET',
     headers: {
       accept: 'application/json',
@@ -6,4 +6,4 @@ const auth = {
     }
   };
 
-export default auth;
+export default authen;

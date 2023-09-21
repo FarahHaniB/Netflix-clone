@@ -38,7 +38,6 @@ const Main = () => {
         <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
         <img
           className="w-full h-full object-cover"
-          //   Authorization={'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOWE1ZWU5MTk3YjFkMjJjOGIzY2Q5OTk3MDc3YmYxYiIsInN1YiI6IjY1MDZhYjBjM2NkMTJjMDBhZDhiMmNiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ptQHbd7di5wwNYTosbb10trzJv8C8c2TH5bHR61rWqc'}
           src={`https://image.tmdb.org/t/p/original/${randomMovie?.backdrop_path}`}
           alt={randomMovie?.title}
         />

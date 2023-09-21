@@ -5,12 +5,11 @@ import { UserAuth } from "./Context/AuthContext";
 const Navbar = () => {
   const navigate = useNavigate();
   const { user, logOut } = UserAuth();
-  console.log(user);
 
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate('/')
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -28,9 +27,12 @@ const Navbar = () => {
           <Link to="/account">
             <button className="text-white pr-4">Account</button>
           </Link>
-            <button onClick={handleLogout} className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white">
-              Sign Out
-            </button>
+          <button
+            onClick={handleLogout}
+            className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white"
+          >
+            Sign Out
+          </button>
         </div>
       ) : (
         <div>

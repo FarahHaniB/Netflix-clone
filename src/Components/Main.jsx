@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import requests from "./Requests";
-import auth from "./Pages/Authen";
+import auth from "./Authen";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
@@ -13,16 +13,11 @@ const Main = () => {
       .get(
         requests.requestPopular,
         auth
-        // {
-        // headers: {
-        //     'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOWE1ZWU5MTk3YjFkMjJjOGIzY2Q5OTk3MDc3YmYxYiIsInN1YiI6IjY1MDZhYjBjM2NkMTJjMDBhZDhiMmNiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ptQHbd7di5wwNYTosbb10trzJv8C8c2TH5bHR61rWqc'
-        // }
       )
       .then((response) => {
         setMovies(response.data.results);
       });
   }, []);
-  //   console.log(randomMovie?.backdrop_path);
 
   const truncateString = (str, num) => {
     if (str?.length > num) {

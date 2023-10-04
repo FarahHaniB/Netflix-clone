@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import requests from "./Requests";
-import auth from "./Authen";
+import authen from "./Authen";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
@@ -12,7 +12,7 @@ const Main = () => {
     axios
       .get(
         requests.requestPopular,
-        auth
+        authen
       )
       .then((response) => {
         setMovies(response.data.results);

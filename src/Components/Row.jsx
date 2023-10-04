@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import auth from "./Authen";
+import authen from "./Authen";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import Movies from "./Movies";
@@ -12,7 +12,7 @@ const Row = ({ title, fetchURL, rowID }) => {
     axios
       .get(
         fetchURL,
-        auth
+        authen
       )
       .then((response) => {
         setSlideMovie(response.data.results);
